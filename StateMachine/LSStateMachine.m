@@ -2,6 +2,7 @@
 #import "LSEvent.h"
 #import "LSTransition.h"
 #import "LSStateMachineTypedefs.h"
+//test merge_WITHOUT
 
 void * LSStateMachineDefinitionKey = &LSStateMachineDefinitionKey;
 
@@ -27,7 +28,7 @@ void * LSStateMachineDefinitionKey = &LSStateMachineDefinitionKey;
     if (!self.initialState) {
         self.initialState = state;
     }
-}
+
 
 - (void)when:(NSString *)eventName transitionFrom:(NSString *)from to:(NSString *)to; {
     LSEvent *event = [self eventWithName:eventName];
