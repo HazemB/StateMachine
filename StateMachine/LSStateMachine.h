@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "LSStateMachineTypedefs.h"
-
+//asdasdasdasdas
 @class LSEvent;
 
 @interface LSStateMachine : NSObject
