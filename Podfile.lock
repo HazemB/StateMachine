@@ -1,5 +1,13 @@
 PODS:
   - Kiwi (1.1.0)
+  - StateMachine (0.1)
 
 DEPENDENCIES:
   - Kiwi (~> 1.1.0)
+  - StateMachine (~> 0.1)
+
+SPEC CHECKSUMS:
+  Kiwi: cf6f2f55aa70347ac92994f2c8d4da278010c809
+  StateMachine: 2297e5c66a293f095462cc9c8b4358c4749f52ef
+
+COCOAPODS: 0.36.0.rc.1

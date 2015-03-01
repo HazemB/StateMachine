@@ -1,5 +1,6 @@
 #import "Kiwi.h"
 #import "LSTransition.h"
+#import "KWEqualMatcher.h"
 
 SPEC_BEGIN(LSTransitionSpec)
 __block LSTransition *transition = nil;

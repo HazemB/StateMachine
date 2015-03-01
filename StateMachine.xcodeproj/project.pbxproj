@@ -49,7 +49,8 @@
 
 /* Begin PBXFileReference section */
 		1E77622C3F81426C94A2727E /* libPods-StateMachineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StateMachineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BBE849696034C15B9965570 /* Pods-StateMachineTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateMachineTests.xcconfig"; path = "Pods/Pods-StateMachineTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		31934F3E316B4E1EBCFAA853 /* Pods-StateMachineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateMachineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateMachineTests/Pods-StateMachineTests.release.xcconfig"; sourceTree = "<group>"; };
+		58181F3A58AF946BAB77A76E /* Pods-StateMachineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateMachineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StateMachineTests/Pods-StateMachineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D6F730116DC962D00A5A8F4 /* NSString+Capitalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Capitalize.h"; sourceTree = "<group>"; };
 		8D6F730216DC962D00A5A8F4 /* NSString+Capitalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Capitalize.m"; sourceTree = "<group>"; };
 		8DF481D517125AB600B4B5F9 /* NSString+CapitalizeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CapitalizeSpec.m"; sourceTree = "<group>"; };
@@ -100,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA6D3AB2EF005B5A6A0FDFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58181F3A58AF946BAB77A76E /* Pods-StateMachineTests.debug.xcconfig */,
+				31934F3E316B4E1EBCFAA853 /* Pods-StateMachineTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A001F1F41630DB10002AEC31 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +118,7 @@
 				A001F2191630DB11002AEC31 /* StateMachineTests */,
 				A001F2011630DB10002AEC31 /* Frameworks */,
 				A001F2001630DB10002AEC31 /* Products */,
-				2BBE849696034C15B9965570 /* Pods-StateMachineTests.xcconfig */,
+				3CA6D3AB2EF005B5A6A0FDFE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,7 +229,7 @@
 			name = StateMachineTests;
 			productName = StateMachineTests;
 			productReference = A001F2101630DB11002AEC31 /* StateMachineTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -285,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-StateMachineTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateMachineTests/Pods-StateMachineTests-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -410,7 +420,7 @@
 		};
 		A001F2281630DB11002AEC31 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BBE849696034C15B9965570 /* Pods-StateMachineTests.xcconfig */;
+			baseConfigurationReference = 58181F3A58AF946BAB77A76E /* Pods-StateMachineTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -426,7 +436,7 @@
 		};
 		A001F2291630DB11002AEC31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BBE849696034C15B9965570 /* Pods-StateMachineTests.xcconfig */;
+			baseConfigurationReference = 31934F3E316B4E1EBCFAA853 /* Pods-StateMachineTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
